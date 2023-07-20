@@ -1,8 +1,9 @@
 {
+  "proxy": "http://localhost:3000",
   "name": "eth-marketplace",
   "version": "0.1.0",
-  "description": "An Ethereum Marketplace",
-  "author": "gregory@dappuniversity.com",
+  "description": "A web tracking app",
+  "author": "almia.youssef2@gmail.com",
   "dependencies": {
     "@babel/runtime-corejs2": "^7.16.5",
     "@googlemaps/react-wrapper": "^1.1.17",
@@ -23,9 +24,9 @@
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
     "material-ui": "^1.0.0-beta.47",
-    "react": "16.8.0",
+    "react": "^18.2.0",
     "react-bootstrap": "1.0.0-beta.5",
-    "react-dom": "16.8.0",
+    "react-dom": "^18.2.0",
     "react-google-map": "^3.1.1",
     "react-google-maps": "^9.4.5",
     "react-redux": "^6.0.0",
@@ -35,8 +36,8 @@
     "web3": "1.0.0-beta.55"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

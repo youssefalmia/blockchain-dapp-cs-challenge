@@ -65,9 +65,7 @@ class UserComponent extends Component {
   getDataFromBlockchainfiltered = (idPackage) => {
     //scannedDataWithIdPackage;
     for (var i = 0; i < this.state.scannedDatas.length; i++) {
-      if (this.state.scannedDatas[i]["idPackage"] == idPackage) {
-        // console.log("The data scanned containing this id" + idPackage);
-        //console.log(this.state.scannedDatas[i]);
+      if (this.state.scannedDatas[i]["idPackage"] === idPackage) {
         this.state.finalArrayWithBlockchainData.push({
           lng: this.state.scannedDatas[i][1],
           lat: this.state.scannedDatas[i][2],

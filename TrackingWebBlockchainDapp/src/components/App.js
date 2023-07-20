@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Web3 from "web3";
 import "./App.css";
 import DataScanner from "../abis/DataScanner.json";
 import ServiceScanData from "../services/ServicesScanData";
 import MapWrapped from "./MapWrapped";
-import UserComponent from "./UserComponent";
 import { Row, Container, Col } from "react-bootstrap";
 import emptyBox from "../1376786.png";
 class App extends Component {
@@ -144,7 +142,7 @@ class App extends Component {
   getDataFromBlockchainfiltered = (idPackage) => {
     //scannedDataWithIdPackage;
     for (var i = 0; i < this.state.scannedDatas.length; i++) {
-      if (this.state.scannedDatas[i]["idPackage"] == idPackage) {
+      if (this.state.scannedDatas[i]["idPackage"] === idPackage) {
         // console.log("The data scanned containing this id" + idPackage);
         //console.log(this.state.scannedDatas[i]);
         this.state.finalArrayWithBlockchainData.push({
@@ -197,7 +195,7 @@ class App extends Component {
                         type="text"
                         value={
                           this.state.arrayDBScannedDataNotValidated[0][
-                            "longitude"
+                          "longitude"
                           ]
                         }
                         className="form-control mb-1"
@@ -219,7 +217,7 @@ class App extends Component {
                         type="text"
                         value={
                           this.state.arrayDBScannedDataNotValidated[0][
-                            "latitude"
+                          "latitude"
                           ]
                         }
                         className="form-control mb-1"
@@ -261,7 +259,7 @@ class App extends Component {
                         type="text"
                         value={
                           this.state.arrayDBScannedDataNotValidated[0][
-                            "idPackage"
+                          "idPackage"
                           ]
                         }
                         className="form-control mb-1"
@@ -276,7 +274,7 @@ class App extends Component {
                   />
                 ) : (
                   <span>
-                    <img src={emptyBox} style={{ width: "70%" }} />
+                    <img src={emptyBox} alt="empty box" style={{ width: "70%" }} />
                     <h2>No New Data to Send</h2>
                   </span>
                 )}
