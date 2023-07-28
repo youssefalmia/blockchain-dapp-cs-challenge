@@ -1,38 +1,99 @@
-# blockchain-dapp-cs-challenge
-A package tracking decentrilized application based on the Blockchain for the cs challenge 2021
+# Blockchain DApp for Package Tracking
 
--I-
-1- Start by opening your WAMP or XAMP and starting the MySQL database
-2- cd TrackingSpringBackend
-3- Go the the appliaction.properties and change your creadential or configure the database as you like
-[Image goes her]
-4- mvn install
-5- mvn spring-boot:run
+This repository contains a decentralized application (DApp) for package tracking based on the Blockchain, created as part of the CS Challenge 2021.
 
-Let you spring boot app running and move on to the next step
+## Prerequisites
 
--II-
-1- Open ganache and create a new project
-[We can add an image gere]
-2- Delete the files in TrackingWebBlockchainDapp/abis
+Before running the application, ensure you have the following software installed and configured:
 
-3- cd TrackingWebBlockchainDapp
-4- truffle migrate
-[image goes here]
+1. WAMP or XAMPP with a running MySQL database.
+2. Ganache, a local Ethereum blockchain for development and testing purposes.
+3. MetaMask, a browser extension for interacting with the Ethereum blockchain.
+4. Node.js and npm installed on your system.
 
-4- npm install
-5- npm run start
-6- Now connect with your MetaMask account with ganache
-[Images goes here]
+## Installation and Setup
+
+Follow the steps below to set up and run the application:
+
+### Step I - Setup the Spring Backend
+
+1. Start by opening your WAMP or XAMPP and ensure the MySQL database is running.
+
+2. Open a terminal and navigate to the `TrackingSpringBackend` directory.
+
+3. In the `application.properties` file, update your database credentials or configure the database settings as per your requirements.
+
+  [https://raw.githubusercontent.com/youssefalmia/blockchain-dapp-cs-challenge/main/ProjectRelatedPics/Rootroot.png]
+
+4. Build the Spring backend using Maven:
+
+  ```bash
+  mvn install
+  ```
+5. Run the Spring Boot application:
+
+  ```bash
+  mvn spring-boot:run
+  ```
+
+Let your spring boot app running and move on to the next step
+
+### Step II - Setup the Blockchain DApp
+
+  1. Open ganache and create a new project
+  [We can add an image gere]
+  2. Delete the existing files in the TrackingWebBlockchainDapp/abis directory.
+
+  3. Navigate to the TrackingWebBlockchainDapp directory in the terminal.
+  4. Migrate the smart contracts to the Ganache blockchain:
+
+  ```bash
+    truffle migrate
+  ```
+  [https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/TruffleMigrate.png]
+
+  5. Install the required dependencies for the web application:
+
+  ```bash
+    npm install
+  ```
+
+  6. Start the web application:
+  
+  ```bash
+    npm run start
+  ```
+  Make sure you have MetaMask installed and connected to your Ganache account.
+  [https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/GanacheNetwork.png]
+
+  [https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/AccountGanache.png]
+
+  [https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/ValidKey.png]
 
 
--III-
-1- cd TrackingMobileApp
-2- npm install
-3- npm run start
-this will open the expo CLI and will give you a QR code that you can scan to open the app on your mobile ( you have to be connected to the same wifi )
-[Expo image here]
+  ### Step III - Setup the Mobile App
 
+    1. Navigate to the TrackingMobileApp directory in the terminal.
+    2. Install the required dependencies for the mobile app:
+    
+    ```bash
+      npm install
+    ```
+    
+    3. Start the Expo CLI:
 
+    ```bash
+      npm run start
+    ```
+    The Expo CLI will generate a QR code, which you can scan with your mobile device to open the app (ensure both your computer and mobile device are connected to the same Wi-Fi network).
 
-And that's it, now you can use the mobile app to scan packages QR and send their data to the blockchain after the admin confirm them
+    Now your application is ready to use. The mobile app allows you to scan package QR codes and send their data to the blockchain once the admin confirms them.
+
+    Happy package tracking with the Blockchain DApp!
+
+    ### Contributing
+    Contributions to the project are welcome. Feel free to submit issues and pull requests.
+
+    ### DApp demo
+
+    [GifLink]
