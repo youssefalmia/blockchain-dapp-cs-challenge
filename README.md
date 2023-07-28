@@ -41,7 +41,6 @@ Let your spring boot app running and move on to the next step
 ### Step II - Setup the Blockchain DApp
 
 1. Open ganache and create a new project
-[We can add an image gere]
 2. Delete the existing files in the TrackingWebBlockchainDapp/abis directory.
 
 3. Navigate to the TrackingWebBlockchainDapp directory in the terminal.
@@ -64,12 +63,19 @@ Let your spring boot app running and move on to the next step
   npm run start
 ```
 Make sure you have MetaMask installed and connected to your Ganache account.
+
+<details>
+<summary>
+  More details about the MetaMask and Ganache configuration
+</summary>
+
 ![Ganache Network](https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/GanacheNetwork.png)
 
 ![Ganache Account](https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/AccountGanache.png)
 
 ![Metamask Key](https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/ValidKey.png)
 
+</details>
 
 ### Step III - Setup the Mobile App
 
