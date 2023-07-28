@@ -100,6 +100,6 @@ Happy package tracking with the Blockchain DApp!
 ### Contributing
 Contributions to the project are welcome. Feel free to submit issues and pull requests.
 
-### DApp demo
+### DApp demo ( wait for it, it may take some time to load )
 
 ![DApp demo gif](https://github.com/youssefalmia/blockchain-dapp-cs-challenge/blob/main/ProjectRelatedPics/BlockchainTrackingApp.gif)
