@@ -1,6 +1,6 @@
 # Blockchain DApp for Package Tracking
 
-This repository contains a decentralized application (DApp) for package tracking based on the Blockchain, created as part of the CS Challenge 2021.
+The Blockchain DApp for Package Tracking is a decentralized application created for the CS Challenge 2021. It utilizes the Ethereum blockchain and smart contracts to track packages securely. Transporters will scan package QR codes using the mobile app and submit the data to the blockchain. After admin confirmation, the package tracking information is permanently recorded on the blockchain, enabling customers to track their packages more efficiently. This DApp ensures a transparent and immutable package tracking solution, enhancing the security and reliability of the delivery process.
 
 ## Prerequisites
 
